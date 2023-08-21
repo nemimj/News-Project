@@ -72,6 +72,45 @@ h1,h2,h3,h4,h5,h6{
 .category-sports{
     background-color: var(--sports-color);
 }
+.category-ent{
+    background-color: var(--ent-color);
+}
+.category-tech{
+    background-color: var(--tech-color);
+}
+
+.btn{
+    margin-top: 0.5rem;
+    display: inline-block;
+    color: white;
+    background-color: var(--dark-color);
+    padding: 0.6rem 1rem;
+}
+
+
+.btn-block{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+
+.btn-primary{
+    background-color: var(--primary-color);
+}
+.btn-light{
+    background-color: var(--light-color);
+}
+.btn-secondary{
+    background-color: var(--secondary-color);
+}
+
+.btn:hover{
+    opacity: 0.9;
+}
+
+
+
 /* Navigation bar */
 
 #main-nav{
