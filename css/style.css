@@ -54,6 +54,47 @@ h1,h2,h3,h4,h5,h6{
     overflow: hidden;
 }
 
+
+.bg-dark{
+    background-color: var(--dark-color);
+    color: #fff;
+}
+
+.bg-primary{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.bg-secondary{
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.card{
+    background-color: #fff;
+    padding: 1rem;
+}
+
+.py-2{
+    padding: 2rem 0;
+}
+
+.py-3{
+    padding: 3rem 0;
+}
+
+.p-1{
+    padding: 1.5rem;
+}
+
+.p-2{
+    padding: 2rem;
+}
+
+.p-3{
+    padding: 3rem;
+}
+
 .current{
     background-color: var(--primary-color);
     color: white;
@@ -199,4 +240,27 @@ h1,h2,h3,h4,h5,h6{
 
 #showcase .showcase-content{
     z-index: 1;
+}
+
+
+
+/* Section Artciles */
+
+#home-articles .articles-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1rem;
+}
+
+#home-articles .articles-container > *:first-child,
+#home-articles .articles-container > *:last-child{
+    grid-column: 1 / span 2;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1rem;
+    align-items: center;
+}
+
+#home-articles .articles-container > *:last-child{
+    grid-column: 2 / span 2;
 }
