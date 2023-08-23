@@ -135,6 +135,7 @@ h1,h2,h3,h4,h5,h6{
     text-align: center;
 }
 
+.btn-dark{background-color: var(--dark-color);}
 
 .btn-primary{
     background-color: var(--primary-color);
@@ -310,4 +311,27 @@ h1,h2,h3,h4,h5,h6{
     background-color: #444;
     grid-column: 1 / span 4;
     text-align: center;
+}
+
+
+
+
+
+
+/* Section About.html */
+
+#about aside{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+#about .page-container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 2rem 0;
+    grid-gap: 1.5rem;
+}
+
+#about .page-container >*:first-child{
+    grid-row: 1 / span 2;
 }
