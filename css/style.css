@@ -75,6 +75,10 @@ h1,h2,h3,h4,h5,h6{
     padding: 1rem;
 }
 
+.l-heading{
+    font-size: 3rem;
+}
+
 .py-2{
     padding: 2rem 0;
 }
@@ -135,6 +139,7 @@ h1,h2,h3,h4,h5,h6{
     text-align: center;
 }
 
+.btn-dark{background-color: var(--dark-color);}
 
 .btn-primary{
     background-color: var(--primary-color);
@@ -294,14 +299,54 @@ h1,h2,h3,h4,h5,h6{
 #footer .site-links{
     display: grid;
     grid-template-columns: repeat(1,1fr);
+    align-items: center;
 }
 
 #footer .site-links a{
     color: white;
+    border-bottom: 1px dotted #444;
 }
+
+#footer .site-links a:hover{
+    color: var(--primary-color);
+}
+
 
 .copyright{
     background-color: #444;
     grid-column: 1 / span 4;
     text-align: center;
+}
+
+
+
+
+
+
+/* Section About.html */
+
+#about aside:nth-child(3){
+    background-color: var(--primary-color);
+    color: white;
+}
+
+#about aside:nth-child(2) {
+    background-color: var(--secondary-color);
+    color: white;
+    border-bottom: 1px dotted #333;
+}
+
+#about aside i{
+    margin-right: 0.8rem;
+}
+
+#about .page-container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 2rem 0;
+    grid-gap: 1.5rem;
+}
+
+#about .page-container >*:first-child{
+    grid-row: 1 / span 3;
 }
