@@ -298,7 +298,13 @@ h1,h2,h3,h4,h5,h6{
 
 #footer .site-links a{
     color: white;
+    border-bottom: 1px dotted #444;
 }
+
+#footer .site-links a:hover{
+    color: var(--primary-color);
+}
+
 
 .copyright{
     background-color: #444;
