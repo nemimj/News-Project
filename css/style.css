@@ -75,6 +75,10 @@ h1,h2,h3,h4,h5,h6{
     padding: 1rem;
 }
 
+.l-heading{
+    font-size: 3rem;
+}
+
 .py-2{
     padding: 2rem 0;
 }
@@ -320,9 +324,19 @@ h1,h2,h3,h4,h5,h6{
 
 /* Section About.html */
 
-#about aside{
+#about aside:nth-child(3){
     background-color: var(--primary-color);
     color: white;
+}
+
+#about aside:nth-child(2) {
+    background-color: var(--secondary-color);
+    color: white;
+    border-bottom: 1px dotted #333;
+}
+
+#about aside i{
+    margin-right: 0.8rem;
 }
 
 #about .page-container{
@@ -333,5 +347,5 @@ h1,h2,h3,h4,h5,h6{
 }
 
 #about .page-container >*:first-child{
-    grid-row: 1 / span 2;
+    grid-row: 1 / span 3;
 }
